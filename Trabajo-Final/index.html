@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema principal</title>
+    <link rel="shortcut icon" href="C:/Users/USUARIO/Documents/Proyecto-M/Trabajo-Final/Fotos/b.g.png" type="image/x-icon" widht="400"heigth="400">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=open+sans:300,400,700,800" rel="stylesheet">
+</head>
+<body>
+    <!--Es la cabecera de mi texto-->
+    <header>
+        <div>
+            <!--Es la Navegación de menú -->
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="icon fas fa-bars"></i>
+                </label>
+                <a href="#" class="logo">
+                    <img src="C:/users/USUARIO/Documents/Proyecto-M/Trabajo-Final/Fotos/LogoMakr-3.png" alt="">
+                </a>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="experiencia.html">experiencia</a></li>
+                    <li><a href="diseño-web.html">diseño web</a></li>
+                    <li><a href="proyecto.html">proyecto</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Este es el titulo -->
+        <section class="principal">
+            <h1>Hola soy Miguel <span>/</span> Biemvenido a mi desarrollo web</h1>
+            <h2>Este es mi página principal</h2>  
+        </section>
+    </header>
+    
+    <!-- Este es el cuerpo -->
+    <main>
+        <section class="sección">
+
+            <h2 class="titulo">Ingeniero de Software...</h2>
+            <div class="contenedor-img">
+                <!-- imagen de caratula -->
+                <img src="C:/users/USUARIO/Documents/Proyecto-M/Trabajo-Final/Fotos/foto1.png" atl="" class="imagen">
+
+                <!--imagen de entorno -->
+                <img src="C:/users/USUARIO/Documents/Proyecto-M/Trabajo-Final/Fotos/tony.png" alt="" class="img-t">
+                <img src="C:/users/USUARIO/Documents/Proyecto-M/Trabajo-Final/Fotos/estrella.png" alt="" class="img-e">
+           </div>
+
+        </section>
+    
+        <!-- La referencia -->
+        <section id="redes">
+            <div class="redes-s">
+                <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.whatsapp.com/?lang=es"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/login/es"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+    </main>  
+
+</body>
+</html>
+
+<style class="text/css">
+    *{
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      box-sizing: border-box;
+ 
+    }
+
+    /* colorear main */
+    body{
+        background-image: linear-gradient(to left, #a04f91db,#989191cd);
+        left: -100%;
+
+    }
+
+    /*Es la cabecera de Navegación de menu*/
+    nav{
+        height: 80px;
+        width: 100%;
+        background-image: linear-gradient(to right, #d854e295,#3fead9b6,#9eb2e4e1);
+    }
+
+    /*logo*/
+    .logo{
+        position: absolute;
+        padding: 20px 50px;
+    }
+    img{
+        height: 40px;
+        widows: 20px;
+
+    }
+
+    nav ul{
+        float: right;
+        margin-right: 20px;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+        
+    }
+
+    nav ul li a{
+        color: #fff;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+
+    }
+
+    li a.index, li a:hover{
+        background: #cd2f9e;
+        transition: .5s;
+    }
+
+    /* check de boton */
+    .checkbtn{
+        font-size: 30px;
+        color: #fff;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check{
+        display: none;
+    }
+
+    /* Este es el principal  y sección */
+    main .sección{
+        padding: 30px 0 60px 0;
+    }
+    .sección{
+        padding: 39px 0;
+        width: 99%;
+        max-width: 1000px;
+        margin:auto;
+        overflow: hidden;
+    }
+
+    /*titulo*/
+    .titulo{
+        color: rgb(229, 79, 29);
+        font-size: 30px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    /* Este es el conteenedor de imagen*/
+    .imagen{
+        width: 50%;
+        height: 50%;
+    
+    }
+
+    /* imagen*/
+    .img-t{
+        float: right;
+        width: 120px;
+        height: 140px;
+    }
+
+    .img-e{
+        float: left;
+        height: 120px;
+        width: 100px;
+    }
+
+    /*seccion contenedor-imagen*/
+    .sección .contenedor-imagen{
+        width: 100%;
+
+
+    }
+
+    /* Este es el titulo de la principal*/
+    .principal h1{
+        text-align: center;
+        margin: 40px;
+        font-size: 60px;
+        color: #25eb0fe0;
+
+    }
+
+    .principal h2{
+        text-align: center;
+        margin: 4px;
+        font-size: 40px;
+        font-weight: 300;
+        color:#613feab6;
+        background-color: #cd2f9e,#cd2f9e;
+    }
+
+
+
+    main .redes-s{
+        width: 100%;
+        overflow: hidden;
+        padding-left: 25px;
+        float: right;
+        flex-wrap: wrap;
+    }
+
+    main .redes-s a{
+        display: flex;
+        float: right;
+        width: 40px;
+        height: 40px;
+        background-image: linear-gradient(to right, #e23f3f95,#ec9d0bb6,#16cce0e1);
+        color: #fff;
+        margin: 7px;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        border-radius: 50%;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, .4);
+    }
+
+    main .redes-s a:hover{
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, .4);
+        background: #000;
+        transition: 2s;
+    }
+
+
+    
+    /* responsive */
+    @media (max-width:942px) {
+     
+        nav ul li{
+            padding-left: 20px;
+        }
+        
+        nav ul li a{
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 858px){
+        .checkbtn{
+            display: block;
+
+        }
+
+        ul{
+            position: fixed;
+            width: 80%;
+            height: 70vh;
+            background: #04595ad3;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .8s;
+        }
+
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+
+        li a:hover, li a.index{
+            background: none;
+            color: rgb(255, 55, 0);
+        }
+
+        #check:checked ~ ul{
+            left: 0;
+        }
+
+        .principal h1{
+            text-align: center;
+            margin: 20px;
+            font-size: 16px;
+        }
+
+        .principal h2{
+            text-align: center;
+            margin: 2px;
+            font-size: 10px;
+        }
+
+        .titulo{
+            text-align: center;
+            margin: 2px;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        
+    }
+
+
+
+</style>
