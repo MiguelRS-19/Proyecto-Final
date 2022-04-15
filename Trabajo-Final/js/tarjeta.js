@@ -69,12 +69,12 @@ formulario.inputNumero.addEventListener('keyup', (e) => {
 	if(valorInput[0] == 4){
 		logoMarca.innerHTML = '';
 		const imagen = document.createElement('img');
-		imagen.src = 'C:/users/USUARIO/Documents/sección/Trabajo-Final/Fotos/visa.png';
+		imagen.src = 'Fotos/visa.png';
 		logoMarca.appendChild(imagen);
 	} else if(valorInput[0] == 5){
 		logoMarca.innerHTML = '';
 		const imagen = document.createElement('img');
-		imagen.src = 'C:/users/USUARIO/Documents/sección/Trabajo-Final/Fotos/maestro.png';
+		imagen.src = 'Fotos/maestro.png';
 		logoMarca.appendChild(imagen);
 	}
 

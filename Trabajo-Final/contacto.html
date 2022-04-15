@@ -60,8 +60,8 @@
                         <input type="tel" name="phone" placeholder="Teléfono">
                     </p>
                 <p>
-                        <label>Asunto</label>
-                        <input type="tel" name="asunto" placeholder="Asunto" id="asunto">
+                        <label>Edad</label>
+                        <input type="año" name="edad" placeholder="Edad" id="edad">
                     </p>
                     <p class="block">
                        <label>Mensaje</label> 
@@ -279,7 +279,7 @@
 
     /* CONTACT INFO */
     .contact-info {
-        background: rgb(55, 158, 39);
+        background: #379e27;
     }
 
     .contact-info ul li i{
@@ -395,7 +395,7 @@
 
     .burbuja{
         border-radius: 50%;
-        background: rgb(243, 169, 21);
+        background: #f3a915;
         opacity: .3;
 
         position: absolute;
@@ -520,8 +520,65 @@
 
    @media (max-width: 867px) {
         body {
-            padding: 15px;
+            padding: 10px;
             
+        }
+
+        .container {
+            max-width: 110px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1.5em;
+        }
+
+
+        .header {
+            background: #333;
+            color: white;
+            padding: 0rem 0;
+        
+        }
+        
+        .header a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .logo-nav-container {
+            display: flex;
+            justify-content: space-between;
+            
+            align-items: center;
+        
+            flex-wrap: wrap;
+        }
+        
+        /* logo1 */
+
+        .logo1 img{
+            width: 80px;
+            height: 80px;
+            display: none;
+        }
+        
+        /* TODOS LOS "ul" QUE ESTEN DENTRO DE "navegacion" */
+        
+        .navegacion ul li {
+            /* uno al lado del otro */
+            display: inline-block;
+        }
+        
+        /* LOS ENLACES DENTRO DEL MENU */
+        .navegacion ul li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s linear;
+            border-radius: 5px;
+            
+        }
+        
+        .navegacion ul li a:hover {
+            background: #3d0f03;
         }
 
         .navegacion menu {
@@ -531,10 +588,16 @@
         }
 
         .menu li a{
+            text-align: center;
+            font-size: 15px;
             display: inline-block;
 
         }
 
+        .contact-info {
+            margin-top: 40px;
+            background: #379e27;
+        }
 
         .contacto-f {
             display: block;
@@ -568,6 +631,17 @@
             margin: 25px;
             width: 250px;
             height: 200px;
+        }
+
+        .burbuja{
+            border-radius: 50%;
+            background: #124c62;
+            opacity: .3;
+
+            position: absolute;
+            bottom: -150;
+            
+            animation: burbujas 3s linear infinite ;
         }
 
     }

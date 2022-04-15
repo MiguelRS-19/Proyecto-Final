@@ -17,12 +17,12 @@ $(document).ready(function(){
             $('#email').css("border-bottom-color", "#d1ced1")
         }
 
-        // validar asunto ========
-        if($('#asunto').val()==''){
-            errores += '<p>Escriba un asunto</p>';
-            $('#asunto').css("border-bottom-color", "#F14B4B")
+        // validar Edad ========
+        if($('#edad').val()==''){
+            errores += '<p>Escriba su Edad</p>';
+            $('#edad').css("border-bottom-color", "#F14B4B")
         } else{
-            $('#asunto').css("border-bottom-color", "#d1ced1")
+            $('#edad').css("border-bottom-color", "#d1ced1")
         }
 
         // validar mensaje ========

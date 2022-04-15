@@ -72,6 +72,7 @@
         box-sizing: border-box;
     }
 
+    /*  El Fondo pantalla */
     body{
         
         background: url(../Trabajo-Final/img/fondo.webp) no-repeat;
@@ -79,12 +80,13 @@
         background-size: 250vh;
     }
 
+    /*  posionar el logo */
     .logo{
     position: absolute;
     padding: 20px 50px;
 }
 
-
+     /* El tamaño de imagen */
     .logo img{
         height: 40px;
         widows: 20px;
@@ -129,7 +131,7 @@
 
     .cabecera h1{
         font-size: 50px;
-        color: #16b80de0;
+        color: #0d3bb8e0;
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
         text-shadow: 0px 0px 6px black;
@@ -140,7 +142,7 @@
     .cabecera h2{
         font-size: 30px;
         font-weight: 300;
-        color: #c61dad;
+        color: #43f004;
     }
 
 
@@ -154,14 +156,6 @@
         text-align: center;
     }
 
-
-    .title-name{
-        text-align: center;
-        font-size: 24px;
-        margin: 20px 0 0 0;
-        color: #ea0d0d;
-        flex-direction: column;
-    }
 
 
     .animación{
@@ -203,6 +197,7 @@
         transition: all 300ms;
     }
     
+    /*  Dar defecto de animacion en 3d */
     .animación-3d figure:nth-child(1){transform: rotateY(0deg) 
      translateZ(300px);}
     .animación-3d figure:nth-child(2){transform: rotateY(40deg) 
@@ -248,7 +243,12 @@
     }
 
     /* Responsive */
-    @media (max-width:500px) {
+    @media (max-width:600px) {
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
         body{
             width: 100%;
             height: 100%;
@@ -256,11 +256,9 @@
 
         .animación{
             width: 160px;
-            margin: auto;
+            float: center;
             perspective: 240px;
             position: relative;
-            /*margin-top: 80px;*/
-        
         }
 
 
@@ -318,7 +316,6 @@
         .animación img{
             width: 100%;
             transition: all 300ms;
-            
         }
 
         .animación-3d img:hover{
@@ -326,12 +323,54 @@
             transition: all 300ms;
         }
 
-        
+        .logo{
+            position: absolute;
+            padding: 20px 50px;
+        }
+
+
+        .logo img{
+            display: none;
+        }
+
+        nav{
+            height: 150px;
+            width: 100%;
+            background-image: linear-gradient(to left, #e254c395,#d6ea3fb6,#cf5533e6);
+        }
+
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+
+
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 2px;
+        }
+
+
+        nav ul li a{
+            color: #fff;
+            font-size: 7px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+
+
+        li a.index, li a:hover{
+            background: #f40b0b;
+            transition: .5ms;
+        }
 
         .cabecera h1{
             text-align: center;
             margin: 3px;
             font-size: 22px;
+            text-size-adjust: 5px;
         }
 
         .cabecera h2{
@@ -340,15 +379,8 @@
             font-size: 20px;
             background-size: cover;
         }
-
-        .title-name{
-            text-align: center;
-            font-size: 15px;
-            margin: 100px;
-        }
         
     }      
-
-          
+    
  
 </style> 
