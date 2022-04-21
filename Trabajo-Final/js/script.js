@@ -6,7 +6,7 @@ $(document).ready(function(){
             errores += '<p>Escriba un nombre completo</p>';
             $('#nombre').css("border-bottom-color", "#F14B4B")    
         }  else{
-            $('#nombre').css("border-bottom-color", "#d1ced1")
+            $('#nombre').css("border-bottom-color", "#0f5c00")
         }
 
         // validar correo ========
@@ -14,7 +14,7 @@ $(document).ready(function(){
             errores += '<p>Ingrese un correo electronico</p>';
             $('#email').css("border-bottom-color", "#F14B4B")
         } else{
-            $('#email').css("border-bottom-color", "#d1ced1")
+            $('#email').css("border-bottom-color", "#0f5c00")
         }
 
         // validar Edad ========
@@ -22,7 +22,7 @@ $(document).ready(function(){
             errores += '<p>Escriba su Edad</p>';
             $('#edad').css("border-bottom-color", "#F14B4B")
         } else{
-            $('#edad').css("border-bottom-color", "#d1ced1")
+            $('#edad').css("border-bottom-color", "#0f5c00")
         }
 
         // validar mensaje ========
@@ -30,7 +30,7 @@ $(document).ready(function(){
             errores += '<p>Escriba un mensaje</p>';
             $('#mensaje').css("border-bottom-color", "#F14B4B")    
         } else{
-           $('#mensaje').css("border-bottom-color", "#d1ced1") 
+           $('#mensaje').css("border-bottom-color", "#0f5c00") 
         }
 
         // validar mensaje =======
